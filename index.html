@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Aksai Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reg/regstyle.css">
+  <link rel="stylesheet" href="reg/regstyle2.css">
+</head>
+<body>
+  <div class="container">
+    <section class="gif-banner">
+      <img src="3dgifmaker22019.gif" alt="GIF Banner" class="gif-image" />
+    </section>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">AKAI AKSAI</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Apparel</a></li>
+          <li><a href="reg.html">Register</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">All</a></li>
+          <li><a href="#" onclick="openCart()">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<section class="products" id="products">
+  <div class="product-item">
+    <h3>AKSAI SEASON Trading Card CD v1</h3>
+    <p>Regular price: <span>$9.99</span></p>
+    <button class="add-to-cart" data-name="CD v1" data-price="9.99">Add to Cart</button>
+  </div>
+
+  <div class="product-item">
+    <h3>AKSAI SEASON Cassette Limited Edition</h3>
+    <p>Regular price: <span>$12.99</span></p>
+    <button class="add-to-cart" data-name="Cassette" data-price="12.99">Add to Cart</button>
+  </div>
+
+  <div class="product-item">
+    <h3>AKSAI Logo Black Hoodie</h3>
+    <p>Regular price: <span>$49.99</span></p>
+    <button class="add-to-cart" data-name="Black Hoodie" data-price="49.99">Add to Cart</button>
+  </div>
+
+  <div class="product-item">
+    <h3>AKSAI Logo White Tee</h3>
+    <p>Regular price: <span>$24.99</span></p>
+    <button class="add-to-cart" data-name="White Tee" data-price="24.99">Add to Cart</button>
+  </div>
+
+  <div class="product-item">
+    <h3>AKSAI Sticker Pack</h3>
+    <p>Regular price: <span>$4.99</span></p>
+    <button class="add-to-cart" data-name="Sticker Pack" data-price="4.99">Add to Cart</button>
+  </div>
+
+  <div class="product-item">
+    <h3>AKSAI Black Cap</h3>
+    <p>Regular price: <span>$19.99</span></p>
+    <button class="add-to-cart" data-name="Black Cap" data-price="19.99">Add to Cart</button>
+  </div>
+
+  <div class="product-item">
+    <h3>AKSAI Poster A3</h3>
+    <p>Regular price: <span>$7.99</span></p>
+    <button class="add-to-cart" data-name="Poster A3" data-price="7.99">Add to Cart</button>
+  </div>
+
+  <div class="product-item">
+    <h3>AKSAI Logo Socks (Black/White)</h3>
+    <p>Regular price: <span>$11.99</span></p>
+    <button class="add-to-cart" data-name="Logo Socks" data-price="11.99">Add to Cart</button>
+  </div>
+
+  <div class="product-item">
+    <h3>AKSAI Keychain</h3>
+    <p>Regular price: <span>$3.49</span></p>
+    <button class="add-to-cart" data-name="Keychain" data-price="3.49">Add to Cart</button>
+  </div>
+
+  <div class="product-item">
+    <h3>AKSAI CD Collector Box Set</h3>
+    <p>Regular price: <span>$59.99</span></p>
+    <button class="add-to-cart" data-name="Collector Box" data-price="59.99">Add to Cart</button>
+  </div>
+</section>
+
+
+<section class="cart" id="cart">
+  <h2>Cart</h2>
+  <ul id="cart-items"></ul>
+  <p>Total: $<span id="cart-total">0.00</span></p>
+</section>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="social-links">
+        <a href="https://www.twitch.tv/akaiaksai">Twitch</a>
+        <a href="https://www.instagram.com/akaiaksai/">Instagram</a>
+        <a href="https://www.youtube.com/@akaiaksai">YouTube</a>
+      </div>
+      <p>&copy; 2025 AKAI AKSAI - AKSAI SEASON</p>
+    </footer>
+  </div>
+
+  <div id="cart-modal" class="cart-modal" style="display: none;">
+    <div class="cart-content">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+      <button onclick="closeCart()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

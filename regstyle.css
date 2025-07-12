@@ -1,0 +1,81 @@
+body{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: #000000;
+background-image: url(B21D7F53-93CB-433E-9C52-C5DE82498141\ 1\ \(1\).png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.reg-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;
+
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 10%;
+      box-shadow: 0px 0px 5px 0px white;
+}
+
+.reg{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: black;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: #bbbbbb;
+}
+
+input:focus {
+  border-color: #ffffff;
+}
+
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 0 1px 1px #ffffff;
+  border-radius: 5px;
+  align-self: center; 
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 0 1px 1px #665b5b;
+}
+
+.error-message {
+  color: white;
+  font-size: 12px;
+  height: 14px;
+}
